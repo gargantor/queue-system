@@ -1,0 +1,40 @@
+{
+  "name": "queue-backend",
+  "version": "1.0.0",
+  "description": "back end for queue system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "jwt",
+    "mongodb",
+    "queue-system"
+  ],
+  "author": "Hanif",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "bin": "server.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "app/**/*"
+    ],
+    "targets": [
+      "node12-macos-x64",
+      "node10-win-x64"
+    ]
+  }
+}
